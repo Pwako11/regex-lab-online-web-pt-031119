@@ -1,6 +1,9 @@
 def starts_with_a_vowel?
+  array =[]
 match =  %w{ afoot Excellent incredible Absolute unreal Inconceivable octopus }
 match.each do |word|
+  array << word 
+  
 match.match(/\w+[aeiou]/)
 end
 
