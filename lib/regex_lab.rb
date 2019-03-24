@@ -3,8 +3,9 @@ def starts_with_a_vowel?
 match =  %w{ afoot Excellent incredible Absolute unreal Inconceivable octopus }
 match.each do |word|
   array << word 
-  
-match.match(/\w+[aeiou]/)
+end 
+array.each {|i| i[0].match(/\w+ [aeiou]/)}   
+
 end
 
 def words_starting_with_un_and_ending_with_ing(text)
