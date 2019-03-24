@@ -1,10 +1,19 @@
-def starts_with_a_vowel?
-  array =[]
-match =  %w{ afoot Excellent incredible Absolute unreal Inconceivable octopus }
-match.each do |word|
-  array << word 
+# array =[]
+# match =  %w{ afoot Excellent incredible Absolute unreal Inconceivable octopus }
+# match.each do |word|
+#   array << word
+# array.each {|i| i[0].match(/\w+ [aeiou]/)}
+
+def starts_with_a_vowel? (word)
+  if word.match(/\A[aeiou]/i) ==nil 
+    return false 
+  else
+    return true 
+  end
+end
+ 
 end 
-array.each {|i| i[0].match(/\w+ [aeiou]/)}   
+   
 
 end
 
